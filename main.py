@@ -11,3 +11,4 @@ for el in parser.finditer(string):
         for_print = "валідний"
 
 print(for_print)
+print(string)
