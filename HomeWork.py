@@ -28,3 +28,4 @@ dict1 = {"apple":12, "orange":8, "plum":5, "banana":6, "mango":9}
 dict2 = {"pineapple":18, "peach":4, "plum":6,  "mango":7}
 
 print(dict_union(dict1, dict2))
+print(dict1)
