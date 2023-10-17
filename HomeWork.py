@@ -29,3 +29,4 @@ dict2 = {"pineapple":18, "peach":4, "plum":6,  "mango":7}
 
 print(dict_union(dict1, dict2))
 print(dict1)
+print(dict2)
