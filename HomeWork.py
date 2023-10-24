@@ -1,31 +1,32 @@
-# dict1 = {"name " : "Jane", "surname" : "Smith","age" : 32}
-#
-# dict2 = {"phone " : "0503342929", "email" : "Smith@gmail.com","sex" : "feminine"}
-#
-# dict3 = dict1|dict2
-#
-# print(dict3)
 
-def dict_union(dict_par_1, dict_par_2):
-    dict={}
+import random
 
-    for key in dict_par_1.keys():
-        if dict.get(key) == None:
-            dict[key] = dict_par_1[key]
-        else:
-            dict[key] += dict_par_1[key]
-
-    for key in dict_par_2.keys():
-        if dict.get(key) == None:
-            dict[key] = dict_par_2[key]
-        else:
-            dict[key] += dict_par_2[key]
-
-    return dict
+mylist = ["Everest", "Newton", "blueberry","library","continent"]
+hidden_word = random.choice(mylist).lower()
 
 
-dict1 = {"apple":12, "orange":8, "plum":5, "banana":6, "mango":9}
-dict2 = {"pineapple":18, "peach":4, "plum":6,  "mango":7}
+def check_attempt(inputstr):
+    if len(inputstr) > 1 and hidden_word == inputstr:
+        print("Congratulations, you guessed the word!")
+    elif len(inputstr) > 1:
+        print("You failed!")
+    else:
+        ind = hidden_word.find(inputstr)
 
 
-print(dict2)
+
+for i in range(1,len(hidden_word)):
+    mask_word =+"*"
+
+print("There is a hidden word:   "+mask_word)
+
+nbr_att = int(input("Input your number of attempts:"))
+
+for i in range(1,nbr_att):
+    str_att = int(input("Input your letter or word:")).lower()
+    if len(str_att) == 0:
+        print("You need to enter a letter or word")
+    check_attempt(str_att)
+
+
+
